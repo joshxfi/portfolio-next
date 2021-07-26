@@ -42,6 +42,12 @@ export const Homepage: React.FC = () => {
     },
   };
 
+  const techIcons = icons.map((icon, i) => (
+    <motion.li key={i} variants={item} whileHover={{ scale: 1.1 }}>
+      {icon}
+    </motion.li>
+  ));
+
   return (
     <main
       id='home'
@@ -141,11 +147,7 @@ export const Homepage: React.FC = () => {
         initial='hidden'
         animate='visible'
       >
-        {icons.map((icon, index) => (
-          <motion.li key={index} variants={item} whileHover={{ scale: 1.1 }}>
-            {icon}
-          </motion.li>
-        ))}
+        {techIcons}
       </motion.ul>
     </main>
   );
