@@ -14,12 +14,12 @@ import { TiArrowShuffle } from "react-icons/ti";
 
 export const Homepage: React.FC = () => {
   const icons: JSX.Element[] = [
-    <FaReact />,
-    <FaSass />,
-    <GoMarkGithub />,
-    <FaGit />,
-    <SiTypescript />,
-    <SiJavascript />,
+    <FaReact key='0' />,
+    <FaSass key='1' />,
+    <GoMarkGithub key='2' />,
+    <FaGit key='3' />,
+    <SiTypescript key='4' />,
+    <SiJavascript key='5' />,
   ];
 
   const container = {
@@ -41,12 +41,6 @@ export const Homepage: React.FC = () => {
       opacity: 1,
     },
   };
-
-  const techIcons = icons.map((icon, i) => (
-    <motion.li key={i} variants={item} whileHover={{ scale: 1.1 }}>
-      {icon}
-    </motion.li>
-  ));
 
   return (
     <main
@@ -147,7 +141,11 @@ export const Homepage: React.FC = () => {
         initial='hidden'
         animate='visible'
       >
-        {techIcons}
+        {icons.map((icon, i) => (
+          <motion.li key={i} variants={item} whileHover={{ scale: 1.1 }}>
+            {icon}
+          </motion.li>
+        ))}
       </motion.ul>
     </main>
   );
