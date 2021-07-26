@@ -24,7 +24,8 @@ export const Footer: React.FC<FooterProps> = ({}) => {
         align-items: center;
         color: ${colors.fg1};
         background: #000;
-      `}>
+      `}
+    >
       <p>© Josh Daniel 2021 All Rights Reserved</p>
       <div
         css={css`
@@ -36,17 +37,22 @@ export const Footer: React.FC<FooterProps> = ({}) => {
             transition: 0.3s;
             color: ${colors.fg2};
           }
-        `}>
-        <a target='_blank' href='https://github.com/joshxfi'>
+        `}
+      >
+        <a target='_blank' href='https://github.com/joshxfi' rel='noreferrer'>
           <SiGithub />
         </a>
         <a href='#'>
           <SiDiscord />
         </a>
-        <a target='_blank' href='https://www.instagram.com/josh.xfi/'>
+        <a
+          target='_blank'
+          href='https://www.instagram.com/josh.xfi/'
+          rel='noreferrer'
+        >
           <SiInstagram />
         </a>
-        <a href='mailto:joshpersonal8@gmail.com'>
+        <a href='mailto:joshpersonal8@gmail.com' rel='noreferrer'>
           <SiGmail />
         </a>
       </div>

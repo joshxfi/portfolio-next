@@ -3,6 +3,7 @@
 import React from "react";
 import { css, jsx } from "@emotion/react";
 import colors from "../misc/colors";
+import Image from "next/image";
 import proj1 from "../misc/josh.jpg";
 import proj2 from "../misc/pskl2.jpg";
 import proj3 from "../misc/task.jpg";
@@ -23,7 +24,7 @@ export const Projects: React.FC = () => {
   const imgs = (imgName: any) => {
     return (
       <div>
-        <img
+        <Image
           src={imgName}
           alt={imgName}
           css={css`

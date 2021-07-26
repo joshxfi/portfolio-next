@@ -13,7 +13,7 @@ import { GoMarkGithub } from "react-icons/go";
 import { TiArrowShuffle } from "react-icons/ti";
 
 export const Homepage: React.FC = () => {
-  const icons = [
+  const icons: JSX.Element[] = [
     <FaReact />,
     <FaSass />,
     <GoMarkGithub />,
@@ -52,7 +52,8 @@ export const Homepage: React.FC = () => {
         align-items: center;
         justify-content: space-between;
         margin: 0 auto;
-      `}>
+      `}
+    >
       <header
         css={css`
           line-height: 0;
@@ -75,26 +76,30 @@ export const Homepage: React.FC = () => {
             color: #8e9775;
             cursor: pointer;
           }
-        `}>
+        `}
+      >
         <motion.h1
           initial={{ x: -900, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{
             duration: 1.5,
-          }}>
+          }}
+        >
           Josh
         </motion.h1>
         <div className='desc'>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1 }}>
+            transition={{ delay: 1.5, duration: 1 }}
+          >
             forthcoming full-stack
           </motion.h2>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1 }}>
+            transition={{ delay: 1.5, duration: 1 }}
+          >
             developer
           </motion.h2>
         </div>
@@ -116,7 +121,8 @@ export const Homepage: React.FC = () => {
               color: ${colors.fg1};
               transition: 0.3s;
             }
-          `}>
+          `}
+        >
           <TiArrowShuffle />
           {"\u00A0"}about me
         </motion.a>
@@ -133,7 +139,8 @@ export const Homepage: React.FC = () => {
         `}
         variants={container}
         initial='hidden'
-        animate='visible'>
+        animate='visible'
+      >
         {icons.map((icon, index) => (
           <motion.li key={index} variants={item} whileHover={{ scale: 1.1 }}>
             {icon}
