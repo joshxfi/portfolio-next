@@ -25,6 +25,10 @@ export const Projects: React.FC = () => {
           width: 100%;
         }
 
+        div > p > b {
+          color: ${colors.fg2};
+        }
+
         @media screen and (max-width: 768px) {
           div {
             grid-template-columns: 1fr;
@@ -34,7 +38,7 @@ export const Projects: React.FC = () => {
             font-size: 3rem;
           }
 
-          p {
+          div > p {
             border-top: 5px solid ${colors.fg};
             border-right: none;
             padding-top: 1rem;
@@ -81,10 +85,11 @@ export const Projects: React.FC = () => {
           />
         </a>
         <p data-aos='fade-up-left'>
-          Created for learning purposes! A platform to freely share your
-          thoughts while staying anonymous! This platform can also be used to
-          vent or rant about someone or something! You can also share quotes,
-          messages, basically anything that you could think of!
+          <b>Project Share Ko Lang:</b> Created for learning purposes! A
+          platform to freely share your thoughts while staying anonymous! This
+          platform can also be used to vent or rant about someone or something!
+          You can also share quotes, messages, basically anything that you could
+          think of!
         </p>
       </div>
     </section>

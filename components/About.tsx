@@ -16,15 +16,15 @@ export const About: React.FC = ({}) => {
         place-content: center;
 
         @media screen and (max-width: 768px) {
-          h1 {
-            font-size: 3rem;
-          }
-
           div {
             width: 100%;
           }
 
-          p {
+          div > h1 {
+            font-size: 3rem;
+          }
+
+          div > p {
             font-size: 1.3rem;
           }
         }
