@@ -1,3 +1,4 @@
 {
-  "display": "standalone"
+  "display": "standalone",
+  "short_name": "Portfolio"
 }

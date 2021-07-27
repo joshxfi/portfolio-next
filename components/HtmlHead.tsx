@@ -5,7 +5,10 @@ export const HtmlHead: React.FC = () => {
   return (
     <Head>
       <meta charSet='UTF-8' />
-      <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+      <meta
+        name='viewport'
+        content='width=device-width, initial-scale=1.0, user-scalable=no'
+      />
       <meta
         name='description'
         content="Hey there! My name is Josh Daniel Bañares, a React.js developer & enthusiast based in the Philippines. I'm a 17 year-old self-taught full-stack MERN developer. I constantly procrastinate & in discombobulation."

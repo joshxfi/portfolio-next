@@ -81,13 +81,13 @@ const App: React.FC = () => {
           * {
             font-family: "Arimo", sans-serif;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
           }
           html {
             scroll-behavior: smooth;
           }
           a {
             text-decoration: none;
-            -webkit-tap-highlight-color: transparent;
             color: ${colors.fg1};
           }
           ul {
