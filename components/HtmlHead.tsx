@@ -21,7 +21,7 @@ export const HtmlHead: React.FC = () => {
         content='joshxfi, josh daniel bañares, xfi, 88xfi'
       />
       <meta name='robots' content='index, follow' />
-      <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+      <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
       <meta name='language' content='English' />
       <meta name='author' content='Josh Daniel Bañares' />
     </Head>
