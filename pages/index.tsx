@@ -60,21 +60,21 @@ const App: React.FC = () => {
             font-size: 3em;
           }
         }
-      `}>
+      `}
+    >
       <Navbar showMenu={showMenu} setShowMenu={setShowMenu} />
       <div style={{ filter: showMenu ? "blur(4px)" : "" }}>
         <Homepage />
         <About />
         <Projects />
         <Contact />
-
         <Footer />
       </div>
       <Global
         styles={css`
-          @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+          @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap");
           * {
-            font-family: "Ubuntu", sans-serif;
+            font-family: "Arimo", sans-serif;
             box-sizing: border-box;
           }
           html {
