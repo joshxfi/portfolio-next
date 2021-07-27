@@ -29,12 +29,10 @@ export const Contact: React.FC = () => {
           border-radius: 8px;
           width: 40%;
           text-align: center;
-          transition: 0.3s;
           margin-top: 2rem;
 
           &:hover {
             background: ${colors.fg2};
-            transform: translateY(-5px);
           }
         }
 

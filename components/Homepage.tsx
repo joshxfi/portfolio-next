@@ -55,7 +55,6 @@ export const Homepage: React.FC = () => {
       `}
     >
       <header
-        data-aos='fade-right'
         css={css`
           line-height: 0;
           h2 {
@@ -129,7 +128,6 @@ export const Homepage: React.FC = () => {
         </motion.a>
       </header>
       <motion.ul
-        data-aos='fade-left'
         css={css`
           list-style: none;
           display: grid;

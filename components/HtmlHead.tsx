@@ -10,6 +10,7 @@ export const HtmlHead: React.FC = () => {
         name='description'
         content="Hey there! My name is Josh Daniel Bañares, a React.js developer & enthusiast based in the Philippines. I'm a 17 year-old self-taught full-stack MERN developer. I constantly procrastinate & in discombobulation."
       />
+      <link rel='manifest' href='/site.webmanifest' />
       <meta name='robots' content='index, follow' />
       <meta name='author' content='Josh Daniel Bañares' />
       <meta
