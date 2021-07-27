@@ -48,6 +48,7 @@ export const Navbar: React.FC<NavbarProps> = ({ showMenu, setShowMenu }) => {
         onClick={() => setVisited(navName)}
         css={css`
           transition: 0.3s;
+
           &:hover {
             color: ${colors.fg};
           }
@@ -72,14 +73,17 @@ export const Navbar: React.FC<NavbarProps> = ({ showMenu, setShowMenu }) => {
           background: ${colors.bg};
           top: 0;
           z-index: 10;
+
           div {
             padding: 0 90px;
           }
+
           .navigation {
             display: flex;
             align-items: center;
             color: ${colors.fg1};
-            font-size: 15px;
+            font-size: 1rem;
+
             a:not(:last-child) {
               margin-right: 40px;
             }

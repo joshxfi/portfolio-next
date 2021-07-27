@@ -25,7 +25,6 @@ export const Footer: React.FC<FooterProps> = ({}) => {
         color: ${colors.fg1};
       `}
     >
-      <p>© Josh Daniel Bañares 2021 All Rights Reserved</p>
       <div
         css={css`
           font-size: 20px;
@@ -51,10 +50,11 @@ export const Footer: React.FC<FooterProps> = ({}) => {
         >
           <SiInstagram />
         </a>
-        <a href='mailto:joshpersonal8@gmail.com' rel='noreferrer'>
+        <a href='mailto:joshxfi.dev@gmail.com' rel='noreferrer'>
           <SiGmail />
         </a>
       </div>
+      <p>© Josh Daniel Bañares 2021 • All Rights Reserved</p>
     </footer>
   );
 };
