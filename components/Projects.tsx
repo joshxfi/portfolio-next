@@ -31,13 +31,14 @@ export const Projects: React.FC = () => {
           }
 
           h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
           }
 
           p {
             border-top: 5px solid ${colors.fg};
-            border-right: 0;
+            border-right: none;
             padding-top: 1rem;
+            font-size: 1.3rem;
           }
         }
       `}

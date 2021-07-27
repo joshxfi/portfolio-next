@@ -40,11 +40,12 @@ export const Contact: React.FC = () => {
 
         @media screen and (max-width: 768px) {
           h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
           }
 
           a {
             width: 100%;
+            font-size: 1.3rem;
           }
         }
       `}

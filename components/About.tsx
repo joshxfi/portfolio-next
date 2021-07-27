@@ -17,11 +17,15 @@ export const About: React.FC = ({}) => {
 
         @media screen and (max-width: 768px) {
           h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
           }
 
           div {
             width: 100%;
+          }
+
+          p {
+            font-size: 1.3rem;
           }
         }
       `}
