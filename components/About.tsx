@@ -31,6 +31,7 @@ export const About: React.FC = ({}) => {
       `}
     >
       <div
+        data-aos='fade-up-right'
         css={css`
           text-align: left;
           width: 50%;

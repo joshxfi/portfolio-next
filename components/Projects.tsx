@@ -43,7 +43,7 @@ export const Projects: React.FC = () => {
         }
       `}
     >
-      <h1>My works.</h1>
+      <h1 data-aos='fade-right'>My works.</h1>
       <div
         css={css`
           display: grid;
@@ -69,13 +69,18 @@ export const Projects: React.FC = () => {
           }
         `}
       >
-        <a href='https://pskl.vercel.app' target='_blank' rel='noreferrer'>
+        <a
+          data-aos='fade-up-right'
+          href='https://pskl.vercel.app'
+          target='_blank'
+          rel='noreferrer'
+        >
           <Image
             src={proj1}
             alt='an image that displays about project-skl website.'
           />
         </a>
-        <p>
+        <p data-aos='fade-up-left'>
           Created for learning purposes! A platform to freely share your
           thoughts while staying anonymous! This platform can also be used to
           vent or rant about someone or something! You can also share quotes,

@@ -50,8 +50,10 @@ export const Contact: React.FC = () => {
         }
       `}
     >
-      <h1>Hit me up!</h1>
-      <a href='mailto:joshxfi.dev@gmail.com'>send message</a>
+      <h1 data-aos='zoom-out-up'>Hit me up!</h1>
+      <a data-aos='zoom-out-up' href='mailto:joshxfi.dev@gmail.com'>
+        send message
+      </a>
     </section>
   );
 };

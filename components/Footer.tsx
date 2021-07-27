@@ -13,6 +13,7 @@ interface FooterProps {}
 export const Footer: React.FC<FooterProps> = ({}) => {
   return (
     <footer
+      data-aos='zoom-in'
       css={css`
         position: absolute;
         bottom: 0;
