@@ -87,6 +87,7 @@ export const Homepage: React.FC = () => {
         >
           Josh
         </motion.h1>
+
         <div className='desc'>
           <motion.h2
             initial={{ opacity: 0 }}
@@ -95,6 +96,7 @@ export const Homepage: React.FC = () => {
           >
             forthcoming full-stack
           </motion.h2>
+
           <motion.h2
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -103,6 +105,7 @@ export const Homepage: React.FC = () => {
             developer
           </motion.h2>
         </div>
+
         <motion.a
           initial={{ x: -900, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -127,6 +130,7 @@ export const Homepage: React.FC = () => {
           {"\u00A0"}about me
         </motion.a>
       </header>
+
       <motion.ul
         css={css`
           list-style: none;

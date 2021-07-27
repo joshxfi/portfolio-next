@@ -41,9 +41,11 @@ export const Footer: React.FC<FooterProps> = ({}) => {
         <a target='_blank' href='https://github.com/joshxfi' rel='noreferrer'>
           <SiGithub />
         </a>
+
         <a href='#'>
           <SiDiscord />
         </a>
+
         <a
           target='_blank'
           href='https://www.instagram.com/josh.xfi/'
@@ -51,6 +53,7 @@ export const Footer: React.FC<FooterProps> = ({}) => {
         >
           <SiInstagram />
         </a>
+
         <a href='mailto:joshxfi.dev@gmail.com' rel='noreferrer'>
           <SiGmail />
         </a>

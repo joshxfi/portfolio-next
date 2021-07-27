@@ -24,6 +24,7 @@ export const HtmlHead: React.FC = () => {
       <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
       <meta name='language' content='English' />
       <meta name='author' content='Josh Daniel Bañares' />
+      <title>Josh Daniel Bañares</title>
     </Head>
   );
 };

@@ -54,15 +54,13 @@ export const Navbar: React.FC<NavbarProps> = ({ showMenu, setShowMenu }) => {
           }
         `}
       >
-        {" "}
-        {navName}{" "}
+        {navName}
       </a>
     );
   };
 
   return (
     <div>
-      {" "}
       <motion.nav
         css={css`
           position: fixed;
@@ -94,15 +92,13 @@ export const Navbar: React.FC<NavbarProps> = ({ showMenu, setShowMenu }) => {
         animate={showNav ? "visible" : "hidden"}
         transition={{ duration: 0.6, delay: delayNav ? 2 : 0 }}
       >
-        {" "}
         <div className='logo'>
-          {" "}
-          <h2>!xfi</h2>{" "}
-        </div>{" "}
+          <h2>!xfi</h2>
+        </div>
+
         <div className='navigation'>
-          {" "}
-          {navLink("home")} {navLink("about")} {navLink("works")}{" "}
-          {navLink("contact")}{" "}
+          {navLink("home")} {navLink("about")} {navLink("works")}
+          {navLink("contact")}
           <FaBars
             style={{ color: showMenu ? "lime" : "" }}
             onClick={() => setShowMenu(!showMenu)}
@@ -111,10 +107,11 @@ export const Navbar: React.FC<NavbarProps> = ({ showMenu, setShowMenu }) => {
               font-size: 25px;
               z-index: 10;
             `}
-          />{" "}
-        </div>{" "}
-      </motion.nav>{" "}
-      <Menu showMenu={showMenu} setShowMenu={setShowMenu} navLink={navLink} />{" "}
+          />
+        </div>
+      </motion.nav>
+
+      <Menu showMenu={showMenu} setShowMenu={setShowMenu} navLink={navLink} />
     </div>
   );
 };
