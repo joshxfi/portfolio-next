@@ -23,10 +23,9 @@ export const Footer: React.FC<FooterProps> = ({}) => {
         flex-direction: column;
         align-items: center;
         color: ${colors.fg1};
-        background: #000;
       `}
     >
-      <p>© Josh Daniel 2021 All Rights Reserved</p>
+      <p>© Josh Daniel Bañares 2021 All Rights Reserved</p>
       <div
         css={css`
           font-size: 20px;

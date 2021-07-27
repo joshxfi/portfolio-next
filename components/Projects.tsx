@@ -4,160 +4,63 @@ import React from "react";
 import { css, jsx } from "@emotion/react";
 import colors from "../misc/colors";
 import Image from "next/image";
-import proj1 from "../misc/josh.jpg";
-import proj2 from "../misc/pskl2.jpg";
-import proj3 from "../misc/task.jpg";
-import proj5 from "../misc/andrea.jpg";
-import proj6 from "../misc/liftoff.jpg";
-import proj7 from "../misc/pskl.jpg";
-import {
-  SiHtml5,
-  SiJavascript,
-  SiSass,
-  SiMongodb,
-  SiReact,
-  SiNodeDotJs,
-  SiTypescript,
-} from "react-icons/si";
+import proj1 from "../misc/pskl2.jpg";
 
 export const Projects: React.FC = () => {
-  const imgs = (imgName: any) => {
-    return (
-      <div>
-        <Image
-          src={imgName}
-          alt={imgName}
-          css={css`
-            border-radius: 16px;
-            filter: grayscale(100%);
-            &:hover {
-              filter: grayscale(0%);
-              transform: scale(1.05);
-            }
-          `}
-        />
-      </div>
-    );
-  };
-
   return (
     <section
       id='works'
       css={css`
+        width: 80%;
         margin: 0 auto;
-        min-height: 120vh;
+        min-height: 100vh;
         height: auto;
-        display: grid;
-        place-items: center;
-        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
         h1 {
-          font-size: 30px;
-        }
-        @media screen and (max-width: 768px) {
-          div {
-            grid-template-columns: 1fr;
-          }
-          div > div > div {
-            width: 90%;
-          }
+          font-size: 5rem;
+          width: 100%;
         }
       `}
     >
+      <h1>My works.</h1>
       <div
         css={css`
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 2em;
-          position: relative;
-          h1 {
-            font-size: 30px;
-            grid-column: 1/3;
-            padding: 0 1.5rem;
-            position: absolute;
-            top: -80px;
-          }
-          & > div {
-            overflow: hidden;
-            width: 400px;
-          }
-          & > div > div:last-of-type {
-            padding: 0.5em;
-            color: ${colors.fg2};
-            font-size: 1.8em;
-            svg:not(:last-of-type) {
-              margin-right: 0.5em;
-            }
-            svg {
-              transition: 0.3s;
-            }
-            svg:hover {
-              transform: translateY(-3px);
-            }
-          }
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 3rem;
+
           img {
-            width: 400px;
+            border-radius: 1rem;
             transition: 0.3s;
-            cursor: cell;
+            filter: grayscale(100%);
+
+            &:hover {
+              filter: grayscale(0);
+            }
+          }
+
+          p {
+            color: ${colors.fg1};
+            margin: 0;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            border-right: 5px solid ${colors.fg};
           }
         `}
       >
-        <h1>my works</h1>
-        <div>
-          {imgs(proj1)}
-          <div>
-            <SiHtml5 />
-            <SiSass />
-            <SiJavascript />
-          </div>
-        </div>
-
-        <div>
-          {imgs(proj2)}
-          <div>
-            {" "}
-            <SiTypescript />
-            <SiReact />
-            <SiMongodb />
-            <SiNodeDotJs />
-          </div>
-        </div>
-
-        <div>
-          {imgs(proj3)}
-          <div>
-            <SiTypescript />
-            <SiReact />
-          </div>
-        </div>
-
-        <div>
-          {imgs(proj7)}
-          <div>
-            <SiReact />
-            <SiMongodb />
-            <SiNodeDotJs />
-          </div>
-        </div>
-
-        <div>
-          {imgs(proj5)}
-          <div>
-            {" "}
-            <SiHtml5 />
-            <SiSass />
-            <SiJavascript />
-          </div>
-        </div>
-
-        <div>
-          {imgs(proj6)}
-          <div>
-            {" "}
-            <SiHtml5 />
-            <SiSass />
-            <SiJavascript />
-          </div>
-        </div>
+        <a href='https://pskl.vercel.app' target='_blank' rel='noreferrer'>
+          <Image src={proj1} />
+        </a>
+        <p>
+          Created for learning purposes! A platform to freely share your
+          thoughts while staying anonymous! This platform can also be used to
+          vent or rant about someone or something! You can also share quotes,
+          messages, basically anything that you could think of!
+        </p>
       </div>
     </section>
   );
