@@ -13,13 +13,13 @@ import { GoMarkGithub } from "react-icons/go";
 import { TiArrowShuffle } from "react-icons/ti";
 
 export const Homepage: React.FC = () => {
-  const icons: JSX.Element[] = [
-    <FaReact key='0' />,
-    <FaSass key='1' />,
-    <GoMarkGithub key='2' />,
-    <FaGit key='3' />,
-    <SiTypescript key='4' />,
-    <SiJavascript key='5' />,
+  const icons = [
+    FaReact,
+    FaSass,
+    GoMarkGithub,
+    FaGit,
+    SiTypescript,
+    SiJavascript,
   ];
 
   const container = {
@@ -141,9 +141,9 @@ export const Homepage: React.FC = () => {
         initial='hidden'
         animate='visible'
       >
-        {icons.map((icon, i) => (
+        {icons.map((Icon, i) => (
           <motion.li key={i} variants={item} whileHover={{ scale: 1.1 }}>
-            {icon}
+            <Icon />
           </motion.li>
         ))}
       </motion.ul>

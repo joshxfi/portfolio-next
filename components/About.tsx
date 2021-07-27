@@ -2,9 +2,12 @@
 /** @jsxRuntime classic */
 import React from "react";
 import { css, jsx } from "@emotion/react";
+import AOS from "aos";
 import { AboutContent } from "./AboutContent";
 
 export const About: React.FC = ({}) => {
+  AOS.init();
+
   return (
     <section
       id='about'
@@ -40,7 +43,8 @@ export const About: React.FC = ({}) => {
             grid-column: 1;
           }
         }
-      `}>
+      `}
+    >
       <AboutContent />
     </section>
   );
