@@ -15,19 +15,12 @@ export const About: React.FC = ({}) => {
         display: grid;
         place-content: center;
 
-        p {
-          font-size: 16px;
-        }
-
         @media screen and (max-width: 768px) {
-          height: 110vh;
-
-          p {
-            font-size: 15px;
+          h1 {
+            font-size: 3.5rem;
           }
 
           div {
-            grid-template-columns: 1fr;
             width: 100%;
           }
         }
@@ -53,9 +46,9 @@ export const About: React.FC = ({}) => {
         <h1>Who am I?</h1>
         <p>
           Hey there! My name is Josh Daniel Bañares, a React.js developer &
-          enthusiast based in the Philippines. I'm a 17 year-old self-taught
-          full-stack MERN developer. I constantly procrastinate & in
-          discombobulation.
+          enthusiast based in the Philippines. I&apos;m a 17 year-old
+          self-taught full-stack MERN developer (<i>kinda</i>). I&apos;m
+          constantly in discombobulation.
         </p>
       </div>
     </section>

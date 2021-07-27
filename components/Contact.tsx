@@ -40,18 +40,17 @@ export const Contact: React.FC = () => {
 
         @media screen and (max-width: 768px) {
           h1 {
-            font-size: 25px;
+            font-size: 3.5rem;
           }
 
           a {
-            width: 150px;
-            font-size: 15px;
+            width: 100%;
           }
         }
       `}
     >
-      <h1>Send me a message!</h1>
-      <a href='mailto:joshxfi.dev@gmail.com'>hit me up!</a>
+      <h1>Hit me up!</h1>
+      <a href='mailto:joshxfi.dev@gmail.com'>send message</a>
     </section>
   );
 };

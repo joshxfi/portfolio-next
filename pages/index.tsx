@@ -29,31 +29,36 @@ const App: React.FC = () => {
               display: block;
             }
           }
+
           main {
             flex-direction: column;
           }
+
           header {
             margin-top: 150px;
             display: grid;
             place-items: center;
-            width: 100%;
             .about-btn {
               position: relative;
               bottom: 40px;
               right: 75px;
               font-size: 15px;
             }
+
             h1 {
               font-size: 8em;
             }
+
             .desc {
               position: relative;
               bottom: 40px;
             }
+
             .desc > h2 {
-              font-size: 1.4em;
+              font-size: 1.5rem;
             }
           }
+
           main > ul {
             position: relative;
             bottom: 100px;

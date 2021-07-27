@@ -24,6 +24,22 @@ export const Projects: React.FC = () => {
           font-size: 5rem;
           width: 100%;
         }
+
+        @media screen and (max-width: 768px) {
+          div {
+            grid-template-columns: 1fr;
+          }
+
+          h1 {
+            font-size: 3.5rem;
+          }
+
+          p {
+            border-top: 5px solid ${colors.fg};
+            border-right: 0;
+            padding-top: 1rem;
+          }
+        }
       `}
     >
       <h1>My works.</h1>
@@ -53,7 +69,10 @@ export const Projects: React.FC = () => {
         `}
       >
         <a href='https://pskl.vercel.app' target='_blank' rel='noreferrer'>
-          <Image src={proj1} />
+          <Image
+            src={proj1}
+            alt='an image that displays about project-skl website.'
+          />
         </a>
         <p>
           Created for learning purposes! A platform to freely share your
