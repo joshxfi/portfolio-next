@@ -28,15 +28,12 @@ export const Contact: React.FC = () => {
         }
 
         a {
-          border: 2px solid ${colors.fg2};
           padding: 10px;
-          border-radius: 8px;
-          width: 40%;
           text-align: center;
-          margin-top: 2rem;
+          font-size: 5rem;
 
           &:hover {
-            background: ${colors.fg2};
+            color: #ccc;
           }
         }
 
@@ -49,7 +46,7 @@ export const Contact: React.FC = () => {
 
           a {
             width: 100%;
-            font-size: 1.3rem;
+            font-size: 2rem;
           }
 
           div {
@@ -79,7 +76,7 @@ export const Contact: React.FC = () => {
       </div>
       <h1 data-aos='zoom-out-up'>Hit me up!</h1>
       <a data-aos='zoom-out-up' href='mailto:joshxfi.dev@gmail.com'>
-        send message
+        <i>joshxfi.dev@gmail.com</i>
       </a>
     </section>
   );

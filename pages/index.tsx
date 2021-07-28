@@ -73,7 +73,10 @@ const App: React.FC = () => {
 
       <div
         onClick={() => setShowMenu(false)}
-        style={{ filter: showMenu ? "blur(4px)" : "" }}
+        css={css`
+          overflow: hidden;
+          filter: ${showMenu ? "blur(4px)" : undefined};
+        `}
       >
         <Homepage />
         <About />
@@ -111,7 +114,6 @@ const App: React.FC = () => {
           body {
             margin: 0;
             padding: 0;
-            width: 100vw;
             background: ${colors.bg};
             color: ${colors.fg};
             overflow-x: hidden;

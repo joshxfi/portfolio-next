@@ -19,14 +19,14 @@ export const About: React.FC = ({}) => {
         justify-content: space-between;
 
         @media screen and (max-width: 768px) {
-          flex-direction: column;
+          justify-content: center;
 
           div {
             width: 100%;
           }
 
           div:last-of-type {
-            width: 15rem;
+            display: none;
           }
 
           div > h1 {
