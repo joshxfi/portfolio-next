@@ -27,7 +27,8 @@ export const HtmlHead: React.FC = () => {
         content='Portfolio by Josh Daniel Bañares, a 17 year-old self-taught React.js developer & enthusiast based in the Philippines.'
       />
       <meta property='og:type' content='website' />
-      <meta property='og:url' content='/thumbnail.jpg' />
+      <meta property='og:url' content='https://xfi.vercel.app' />
+      <meta property='og:image' content='/thumbnail.jpg'></meta>
       <title>Josh Daniel Bañares</title>
     </Head>
   );
