@@ -4,7 +4,7 @@ import React from "react";
 import { css, jsx } from "@emotion/react";
 import colors from "../misc/colors";
 import Image from "next/image";
-import proj1 from "../misc/pskl2.jpg";
+import proj1 from "../public/img/pskl2.jpg";
 
 export const Projects: React.FC = () => {
   return (

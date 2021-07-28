@@ -3,6 +3,7 @@
 import React from "react";
 import { css, jsx } from "@emotion/react";
 import colors from "../misc/colors";
+import avatar from "../public/img/bighead.svg";
 
 export const About: React.FC = ({}) => {
   return (
