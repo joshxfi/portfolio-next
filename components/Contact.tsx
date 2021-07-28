@@ -41,6 +41,8 @@ export const Contact: React.FC = () => {
         }
 
         @media screen and (max-width: 768px) {
+          overflow: visible;
+
           h1 {
             font-size: 3rem;
           }
@@ -49,14 +51,13 @@ export const Contact: React.FC = () => {
             width: 100%;
             font-size: 1.3rem;
           }
+
+          div {
+            display: none;
+          }
         }
       `}
     >
-      <h1 data-aos='zoom-out-up'>Hit me up!</h1>
-      <a data-aos='zoom-out-up' href='mailto:joshxfi.dev@gmail.com'>
-        send message
-      </a>
-
       <div
         data-aos='fade-up'
         data-aos-delay='400'
@@ -76,6 +77,10 @@ export const Contact: React.FC = () => {
       >
         <Image src={hand} alt='an image showing a hand pointing up' />
       </div>
+      <h1 data-aos='zoom-out-up'>Hit me up!</h1>
+      <a data-aos='zoom-out-up' href='mailto:joshxfi.dev@gmail.com'>
+        send message
+      </a>
     </section>
   );
 };

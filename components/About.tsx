@@ -20,7 +20,6 @@ export const About: React.FC = ({}) => {
 
         @media screen and (max-width: 768px) {
           flex-direction: column;
-          justify-content: center;
 
           div {
             width: 100%;
@@ -28,7 +27,6 @@ export const About: React.FC = ({}) => {
 
           div:last-of-type {
             width: 15rem;
-            padding-bottom: 0;
           }
 
           div > h1 {
@@ -68,7 +66,7 @@ export const About: React.FC = ({}) => {
         </p>
       </div>
       <div
-        data-aos='fade-up'
+        data-aos='fade-right'
         css={css`
           width: 25rem;
           padding-bottom: 3rem;

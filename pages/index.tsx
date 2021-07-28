@@ -39,6 +39,7 @@ const App: React.FC = () => {
             margin-top: 150px;
             display: grid;
             place-items: center;
+
             .about-btn {
               position: relative;
               bottom: 40px;
@@ -70,7 +71,10 @@ const App: React.FC = () => {
     >
       <Navbar showMenu={showMenu} setShowMenu={setShowMenu} />
 
-      <div style={{ filter: showMenu ? "blur(4px)" : "" }}>
+      <div
+        onClick={() => setShowMenu(false)}
+        style={{ filter: showMenu ? "blur(4px)" : "" }}
+      >
         <Homepage />
         <About />
         <Projects />

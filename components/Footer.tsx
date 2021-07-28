@@ -30,6 +30,19 @@ export const Footer: React.FC = () => {
           p {
             padding-right: 10rem;
           }
+
+          @media screen and (max-width: 768px) {
+            justify-content: center;
+            flex-direction: column;
+
+            div {
+              padding-left: 0;
+            }
+
+            p {
+              padding-right: 0;
+            }
+          }
         `}
       >
         <div
