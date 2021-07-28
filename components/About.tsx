@@ -68,7 +68,7 @@ export const About: React.FC = ({}) => {
         </p>
       </div>
       <div
-        data-aos='fade-left'
+        data-aos='fade-up'
         css={css`
           width: 25rem;
           padding-bottom: 3rem;
