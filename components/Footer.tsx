@@ -24,11 +24,11 @@ export const Footer: React.FC = () => {
           background: #000;
 
           div {
-            padding-left: 10rem;
+            padding-right: 10rem;
           }
 
           p {
-            padding-right: 10rem;
+            padding-left: 10rem;
           }
 
           @media screen and (max-width: 768px) {
@@ -36,15 +36,16 @@ export const Footer: React.FC = () => {
             flex-direction: column;
 
             div {
-              padding-left: 0;
+              padding-right: 0;
             }
 
             p {
-              padding-right: 0;
+              padding-left: 0;
             }
           }
         `}
       >
+        <p>© Josh Daniel Bañares 2021 • All Rights Reserved</p>
         <div
           css={css`
             font-size: 20px;
@@ -77,7 +78,6 @@ export const Footer: React.FC = () => {
             <SiGmail />
           </a>
         </div>
-        <p>© Josh Daniel Bañares 2021 • All Rights Reserved</p>
       </footer>
     </>
   );

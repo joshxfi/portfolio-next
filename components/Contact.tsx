@@ -50,7 +50,8 @@ export const Contact: React.FC = () => {
           }
 
           div {
-            display: none;
+            z-index: -1;
+            height: 20rem;
           }
         }
       `}
@@ -69,6 +70,7 @@ export const Contact: React.FC = () => {
 
           img {
             height: 30rem;
+            object-fit: cover;
           }
         `}
       >
