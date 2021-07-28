@@ -2,8 +2,9 @@
 /** @jsxRuntime classic */
 import React from "react";
 import { css, jsx } from "@emotion/react";
+import Image from "next/image";
 import colors from "../misc/colors";
-import avatar from "../public/img/bighead.svg";
+import avatar from "../public/img/bighead1.svg";
 
 export const About: React.FC = ({}) => {
   return (
@@ -13,12 +14,21 @@ export const About: React.FC = ({}) => {
         width: 80%;
         margin: 0 auto;
         height: 100vh;
-        display: grid;
-        place-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         @media screen and (max-width: 768px) {
+          flex-direction: column;
+          justify-content: center;
+
           div {
             width: 100%;
+          }
+
+          div:last-of-type {
+            width: 15rem;
+            padding-bottom: 0;
           }
 
           div > h1 {
@@ -56,6 +66,15 @@ export const About: React.FC = ({}) => {
           self-taught full-stack MERN developer (<i>kinda</i>). I&apos;m
           constantly in discombobulation.
         </p>
+      </div>
+      <div
+        data-aos='fade-left'
+        css={css`
+          width: 25rem;
+          padding-bottom: 3rem;
+        `}
+      >
+        <Image src={avatar} alt='an image that shows an avatar' />
       </div>
     </section>
   );
