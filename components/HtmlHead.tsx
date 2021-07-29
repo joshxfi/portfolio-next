@@ -28,8 +28,25 @@ export const HtmlHead: React.FC = () => {
       />
       <meta property='og:type' content='website' />
       <meta property='og:url' content='https://xfi.vercel.app' />
-      <meta property='og:image' content='/thumbnail.jpg'></meta>
-      <title>Josh Daniel Bañares</title>
+      <meta
+        property='og:image'
+        content='https://raw.githubusercontent.com/joshxfi/portfolio-next/main/public/thumbnail.jpg'
+      ></meta>
+      <meta property='twitter:card' content='website' />
+      <meta
+        property='twitter:description'
+        content='Portfolio by Josh Daniel Bañares, a 17 year-old self-taught React.js developer & enthusiast based in the Philippines.'
+      />
+      <meta
+        property='twitter:title'
+        content='Josh Daniel Bañares | Portfolio'
+      />
+      <meta
+        property='twitter:image'
+        content='https://raw.githubusercontent.com/joshxfi/portfolio-next/main/public/thumbnail.jpg'
+      />
+
+      <title>Josh Daniel Bañares | Portfolio</title>
     </Head>
   );
 };

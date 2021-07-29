@@ -57,16 +57,20 @@ export const Homepage: React.FC = () => {
       <header
         css={css`
           line-height: 0;
+
           h2 {
             font-size: 20px;
           }
+
           .desc > h2 {
             font-size: 50px;
             color: ${colors.fg1};
           }
+
           h1 {
             font-size: 150px;
           }
+
           button {
             background: none;
             outline: none;

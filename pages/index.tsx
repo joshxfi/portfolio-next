@@ -43,8 +43,8 @@ const App: React.FC = () => {
             .about-btn {
               position: relative;
               bottom: 40px;
-              right: 75px;
-              font-size: 15px;
+              right: 80px;
+              font-size: 1rem;
             }
 
             h1 {

@@ -2,7 +2,6 @@
 /** @jsxRuntime classic */
 import React from "react";
 import { css, jsx } from "@emotion/react";
-import colors from "../misc/colors";
 import Image from "next/image";
 import hand from "../public/img/hand.png";
 
@@ -52,6 +51,8 @@ export const Contact: React.FC = () => {
           div {
             z-index: -1;
             height: 20rem;
+            top: auto;
+            bottom: 0;
           }
         }
       `}
