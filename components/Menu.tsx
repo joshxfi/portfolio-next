@@ -8,14 +8,10 @@ import { BsArrowRight } from "react-icons/bs";
 interface MenuProps {
   showMenu: boolean;
   setShowMenu: React.Dispatch<React.SetStateAction<boolean>>;
-  navLink: (i: string) => JSX.Element;
+  navLink: (i: string, j: string) => JSX.Element;
 }
 
-export const Menu: React.FC<MenuProps> = ({
-  showMenu,
-  setShowMenu,
-  navLink,
-}) => {
+export const Menu: React.FC<MenuProps> = ({ showMenu, setShowMenu, navLink }) => {
   return (
     <div
       css={css`
@@ -28,7 +24,8 @@ export const Menu: React.FC<MenuProps> = ({
         z-index: 9;
         background: ${colors.bg};
       `}
-      style={{ right: showMenu ? 0 : "-30%" }}>
+      style={{ right: showMenu ? 0 : "-30%" }}
+    >
       <ul
         css={css`
           display: flex;
@@ -44,11 +41,12 @@ export const Menu: React.FC<MenuProps> = ({
             font-size: 22px;
             cursor: pointer;
           }
-        `}>
-        <li>{navLink("home")}</li>
-        <li>{navLink("about")}</li>
-        <li>{navLink("works")}</li>
-        <li>{navLink("contact")}</li>
+        `}
+      >
+        <li>{navLink("home", "")}</li>
+        <li>{navLink("about", "")}</li>
+        <li>{navLink("works", "")}</li>
+        <li>{navLink("contact", "last")}</li>
         <li>
           <BsArrowRight onClick={() => setShowMenu(!showMenu)} />
         </li>

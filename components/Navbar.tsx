@@ -6,10 +6,12 @@ import { css, jsx } from "@emotion/react";
 import colors from "../misc/colors";
 import { FaBars } from "react-icons/fa";
 import { Menu } from "./Menu";
+
 interface NavbarProps {
   showMenu: boolean;
   setShowMenu: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
 export const Navbar: React.FC<NavbarProps> = ({ showMenu, setShowMenu }) => {
   const [showNav, setShowNav] = useState<boolean>(true);
   const [delayNav, setDelayNav] = useState<boolean>(true);
@@ -40,11 +42,11 @@ export const Navbar: React.FC<NavbarProps> = ({ showMenu, setShowMenu }) => {
     hidden: { opacity: 0, y: -100 },
   };
 
-  const navLink = (navName: string) => {
+  const navLink = (navName: string, className: string) => {
     return (
       <a
         href={`#${navName}`}
-        className={visited == navName ? "active" : ""}
+        className={visited == navName ? `active ${className}` : `${className}`}
         onClick={() => setVisited(navName)}
         css={css`
           transition: 0.3s;
@@ -64,17 +66,10 @@ export const Navbar: React.FC<NavbarProps> = ({ showMenu, setShowMenu }) => {
       <motion.nav
         css={css`
           position: fixed;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
           width: 100%;
           background: ${colors.bg};
           top: 0;
           z-index: 10;
-
-          div {
-            padding: 0 90px;
-          }
 
           .navigation {
             display: flex;
@@ -82,8 +77,12 @@ export const Navbar: React.FC<NavbarProps> = ({ showMenu, setShowMenu }) => {
             color: ${colors.fg1};
             font-size: 1rem;
 
-            a:not(:last-child) {
+            a:not(.last) {
               margin-right: 40px;
+            }
+
+            a {
+              font-weight: 500;
             }
           }
         `}
@@ -92,22 +91,32 @@ export const Navbar: React.FC<NavbarProps> = ({ showMenu, setShowMenu }) => {
         animate={showNav ? "visible" : "hidden"}
         transition={{ duration: 0.6, delay: delayNav ? 2 : 0 }}
       >
-        <div className='logo'>
-          <h2>!xfi</h2>
-        </div>
+        <div
+          css={css`
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+          `}
+        >
+          <div className='logo'>
+            <h2>!xfi</h2>
+          </div>
 
-        <div className='navigation'>
-          {navLink("home")} {navLink("about")} {navLink("works")}
-          {navLink("contact")}
-          <FaBars
-            style={{ color: showMenu ? "lime" : "" }}
-            onClick={() => setShowMenu(!showMenu)}
-            css={css`
-              display: none;
-              font-size: 25px;
-              z-index: 10;
-            `}
-          />
+          <div className='navigation'>
+            {navLink("home", "")} {navLink("about", "")} {navLink("works", "")}
+            {navLink("contact", "last")}
+            <FaBars
+              style={{ color: showMenu ? "lime" : "" }}
+              onClick={() => setShowMenu(!showMenu)}
+              css={css`
+                display: none;
+                font-size: 25px;
+                z-index: 10;
+              `}
+            />
+          </div>
         </div>
       </motion.nav>
 
