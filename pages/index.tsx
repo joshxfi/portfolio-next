@@ -20,12 +20,10 @@ const App: React.FC = () => {
 
         @media screen and (max-width: 768px) {
           nav {
-            div {
-              padding: 0 40px;
-            }
             .navigation > a {
               display: none;
             }
+
             svg {
               display: block;
             }
