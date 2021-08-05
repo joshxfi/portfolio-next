@@ -71,13 +71,14 @@ export const Contact: React.FC = () => {
 
           img {
             height: 30rem;
+            width: 20rem;
             object-fit: cover;
           }
         `}
       >
         <Image src={hand} alt='an image showing a hand pointing up' />
       </div>
-      <h1 data-aos='zoom-out-up'>Hit me up!</h1>
+      <h1 data-aos='zoom-out-up'>hit me up!</h1>
       <a data-aos='zoom-out-up' href='mailto:joshxfi.dev@gmail.com'>
         <i>joshxfi.dev@gmail.com</i>
       </a>

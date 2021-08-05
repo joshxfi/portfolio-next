@@ -49,9 +49,11 @@ export const Footer: React.FC = () => {
         <div
           css={css`
             font-size: 20px;
+
             a:not(:last-child) {
               margin-right: 40px;
             }
+
             a:hover {
               transition: 0.3s;
               color: ${colors.fg2};
@@ -66,11 +68,7 @@ export const Footer: React.FC = () => {
             <SiDiscord />
           </a>
 
-          <a
-            target='_blank'
-            href='https://www.instagram.com/josh.xfi/'
-            rel='noreferrer'
-          >
+          <a target='_blank' href='https://www.instagram.com/josh.xfi/' rel='noreferrer'>
             <SiInstagram />
           </a>
 

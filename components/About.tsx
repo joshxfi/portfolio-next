@@ -57,12 +57,11 @@ export const About: React.FC = ({}) => {
           }
         `}
       >
-        <h1>Who am I?</h1>
+        <h1>who am I?</h1>
         <p>
-          Hey there! My name is Josh Daniel Bañares, a React.js developer &
-          enthusiast based in the Philippines. I&apos;m a 17 year-old
-          self-taught full-stack MERN developer (<i>kinda</i>). I&apos;m
-          constantly in discombobulation.
+          hey there! My name is Josh Daniel Bañares, a React.js developer & enthusiast based in the Philippines.
+          I&apos;m a 17 year-old self-taught full-stack MERN developer (<i>kinda</i>). I&apos;m constantly in
+          discombobulation.
         </p>
       </div>
       <div
@@ -72,7 +71,7 @@ export const About: React.FC = ({}) => {
           padding-bottom: 3rem;
         `}
       >
-        <Image src={avatar} alt='an image that shows an avatar' />
+        <Image src={avatar} alt='avatar' />
       </div>
     </section>
   );
