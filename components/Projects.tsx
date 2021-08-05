@@ -3,8 +3,9 @@
 import React from "react";
 import { css, jsx } from "@emotion/react";
 import colors from "../misc/colors";
-import Image from "next/image";
-import proj1 from "../public/img/pskl2.jpg";
+import pskl from "../public/img/pskl2.jpg";
+import cssmaid from "../public/img/cssmaid.jpg";
+import { Project } from "./Project";
 
 export const Projects: React.FC = () => {
   return (
@@ -39,49 +40,29 @@ export const Projects: React.FC = () => {
           }
 
           div > p {
-            border-top: 5px solid ${colors.fg};
-            border-right: none;
             padding-top: 1rem;
+            padding-right: 0;
             font-size: 1.3rem;
           }
         }
       `}
     >
       <h1 data-aos='fade-right'>my works.</h1>
-      <div
-        css={css`
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-gap: 3rem;
+      <Project
+        img={pskl}
+        url='https://pskl.vercel.app'
+        title='Project Share Ko Lang'
+        desc='A platform to freely share your thoughts while
+        staying anonymous! This platform can also be used to vent or rant about someone or something! You can also share
+        quotes, messages, basically anything that you could think of!'
+      />
 
-          img {
-            border-radius: 1rem;
-            transition: 0.3s;
-            filter: grayscale(100%);
-
-            &:hover {
-              filter: grayscale(0);
-            }
-          }
-
-          p {
-            color: ${colors.fg1};
-            margin: 0;
-            font-size: 1.5rem;
-            line-height: 2.5rem;
-            border-right: 5px solid ${colors.fg};
-          }
-        `}
-      >
-        <a data-aos='fade-up-right' href='https://pskl.vercel.app' target='_blank' rel='noreferrer'>
-          <Image src={proj1} alt='an image that displays about project-skl website.' />
-        </a>
-        <p data-aos='fade-up-left'>
-          <b>Project Share Ko Lang:</b> Created for learning purposes! A platform to freely share your thoughts while
-          staying anonymous! This platform can also be used to vent or rant about someone or something! You can also
-          share quotes, messages, basically anything that you could think of!
-        </p>
-      </div>
+      <Project
+        img={cssmaid}
+        url='https://css-maid.vercel.app'
+        title='CSS Maid'
+        desc='CSS Maid is a tool for React.js that helps clean up & reset default css! It resets default padding, remove text-decoration on <a> tag, and many more! This tool was built using emotion & typescript!'
+      />
     </section>
   );
 };
