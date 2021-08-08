@@ -9,6 +9,7 @@ import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import { Homepage } from "../components/Homepage";
 import { Projects } from "../components/Projects";
+import { Technologies } from "../components/Technologies";
 
 const App: React.FC = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -78,6 +79,7 @@ const App: React.FC = () => {
       >
         <Homepage />
         <About />
+        <Technologies />
         <Projects />
         <Contact />
         <Footer />
