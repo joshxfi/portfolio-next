@@ -9,6 +9,7 @@ interface TechnologiesProps {}
 export const Technologies: React.FC<TechnologiesProps> = ({}) => {
   return (
     <section
+      id='techs'
       css={css`
         width: 80%;
         margin: 0 auto;
@@ -16,6 +17,7 @@ export const Technologies: React.FC<TechnologiesProps> = ({}) => {
         height: auto;
         display: flex;
         flex-direction: column;
+        justify-content: center;
 
         h1 {
           font-size: 5rem;
@@ -28,8 +30,6 @@ export const Technologies: React.FC<TechnologiesProps> = ({}) => {
         }
 
         @media screen and (max-width: 768px) {
-          justify-content: center;
-
           div {
             width: 100%;
           }

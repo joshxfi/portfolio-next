@@ -13,14 +13,7 @@ import { GoMarkGithub } from "react-icons/go";
 import { TiArrowShuffle } from "react-icons/ti";
 
 export const Homepage: React.FC = () => {
-  const icons = [
-    FaReact,
-    FaSass,
-    GoMarkGithub,
-    FaGit,
-    SiTypescript,
-    SiJavascript,
-  ];
+  const icons = [FaReact, FaSass, GoMarkGithub, FaGit, SiTypescript, SiJavascript];
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -44,7 +37,6 @@ export const Homepage: React.FC = () => {
 
   return (
     <main
-      id='home'
       css={css`
         height: 100vh;
         width: 80%;
@@ -93,19 +85,11 @@ export const Homepage: React.FC = () => {
         </motion.h1>
 
         <div className='desc'>
-          <motion.h2
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1 }}
-          >
+          <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5, duration: 1 }}>
             forthcoming full-stack
           </motion.h2>
 
-          <motion.h2
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1 }}
-          >
+          <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5, duration: 1 }}>
             developer
           </motion.h2>
         </div>

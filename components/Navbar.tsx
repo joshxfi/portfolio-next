@@ -105,7 +105,7 @@ export const Navbar: React.FC<NavbarProps> = ({ showMenu, setShowMenu }) => {
           </div>
 
           <div className='navigation'>
-            {navLink("home", "")} {navLink("about", "")} {navLink("works", "")}
+            {navLink("about", "")} {navLink("techs", "")} {navLink("works", "")}
             {navLink("contact", "last")}
             <FaBars
               style={{ color: showMenu ? "lime" : "" }}
