@@ -55,9 +55,9 @@ export const Technologies: React.FC<TechnologiesProps> = ({}) => {
       >
         <h1>my techs.</h1>
         <p>
-          For front-end I use React.js with TypeScript. I use Vite.js for my React projects (<i>CRA's too 🐢</i>), but I
-          use Next.js for SSG & SSR. For styling, I use either Emotion or TailwindCSS. For back-end I use Express.js
-          with TypeScript, RestAPI (<i>GraphQL soon</i>), & MongoDB as my database.
+          For front-end I use React.js with TypeScript. I use Vite.js for my React projects (<i>CRA&apos;s too 🐢</i>),
+          but I use Next.js for SSG & SSR. For styling, I use either Emotion or TailwindCSS. For back-end I use
+          Express.js with TypeScript, RestAPI (<i>GraphQL soon</i>), & MongoDB as my database.
         </p>
       </div>
     </section>
