@@ -30,7 +30,7 @@ export const Projects: React.FC = () => {
           color: ${colors.fg2};
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1080px) {
           div {
             grid-template-columns: 1fr;
           }

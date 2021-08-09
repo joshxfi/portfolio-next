@@ -36,7 +36,7 @@ export const Contact: React.FC = () => {
           }
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1080px) {
           overflow: visible;
 
           h1 {

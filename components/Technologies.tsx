@@ -29,7 +29,7 @@ export const Technologies: React.FC<TechnologiesProps> = ({}) => {
           color: ${colors.fg1};
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1080px) {
           div {
             width: 100%;
           }

@@ -19,7 +19,7 @@ const App: React.FC = () => {
       css={css`
         position: relative;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1080px) {
           nav {
             .navigation > a {
               display: none;

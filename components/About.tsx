@@ -18,7 +18,7 @@ export const About: React.FC = ({}) => {
         align-items: center;
         justify-content: space-between;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1080px) {
           justify-content: center;
 
           div {

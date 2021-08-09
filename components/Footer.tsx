@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
             padding-left: 10rem;
           }
 
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 1080px) {
             justify-content: center;
             flex-direction: column;
 
