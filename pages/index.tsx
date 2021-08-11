@@ -24,10 +24,6 @@ const App: React.FC = () => {
             .navigation > a {
               display: none;
             }
-
-            svg {
-              display: block;
-            }
           }
 
           main {
