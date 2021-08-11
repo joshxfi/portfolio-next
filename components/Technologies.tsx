@@ -26,7 +26,7 @@ export const Technologies: React.FC = () => {
   ];
   return (
     <section
-      id='techs'
+      id='skills'
       css={css`
         width: 80%;
         margin: 0 auto;
@@ -60,7 +60,11 @@ export const Technologies: React.FC = () => {
 
           div > div {
             grid-template-columns: 1fr 1fr;
-            gap: 0;
+            gap: 0 1rem;
+
+            p {
+              font-size: 1rem;
+            }
           }
         }
       `}
