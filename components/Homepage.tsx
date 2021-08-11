@@ -14,6 +14,14 @@ import { FaFacebookSquare } from "react-icons/fa";
 
 export const Homepage: React.FC = () => {
   const icons = [FaLinkedin, FaDiscord, FaGithubSquare, FaInstagramSquare, FaTwitterSquare, FaFacebookSquare];
+  const iconLinks = [
+    "https://www.linkedin.com/in/josh-daniel-ba%C3%B1ares/",
+    "#",
+    "https://github.com/joshxfi",
+    "https://www.instagram.com/josh.xfi/",
+    "#",
+    "#",
+  ];
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -127,15 +135,20 @@ export const Homepage: React.FC = () => {
           gap: 1em;
           font-size: 4em;
           padding: 0;
-          color: ${colors.fg2};
+
+          li > a {
+            color: ${colors.fg2};
+          }
         `}
         variants={container}
         initial='hidden'
         animate='visible'
       >
         {icons.map((Icon, i) => (
-          <motion.li key={i} variants={item} whileHover={{ scale: 1.1 }}>
-            <Icon />
+          <motion.li key={Icon.toString()} variants={item} whileHover={{ scale: 1.1 }}>
+            <a href={iconLinks[i]} target='_blank' rel='noreferrer'>
+              <Icon />
+            </a>
           </motion.li>
         ))}
       </motion.ul>
