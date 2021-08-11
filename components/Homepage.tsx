@@ -4,16 +4,16 @@ import React from "react";
 import { css, jsx } from "@emotion/react";
 import { motion } from "framer-motion";
 import colors from "../misc/colors";
-import { SiJavascript } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
-import { FaSass } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { FaGit } from "react-icons/fa";
-import { GoMarkGithub } from "react-icons/go";
 import { TiArrowShuffle } from "react-icons/ti";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 
 export const Homepage: React.FC = () => {
-  const icons = [FaReact, FaSass, GoMarkGithub, FaGit, SiTypescript, SiJavascript];
+  const icons = [FaLinkedin, FaDiscord, FaGithubSquare, FaInstagramSquare, FaTwitterSquare, FaFacebookSquare];
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -86,7 +86,7 @@ export const Homepage: React.FC = () => {
 
         <div className='desc'>
           <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5, duration: 1 }}>
-            forthcoming full-stack
+            self-taught full-stack
           </motion.h2>
 
           <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5, duration: 1 }}>
@@ -97,7 +97,7 @@ export const Homepage: React.FC = () => {
         <motion.a
           initial={{ x: -900, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1.5, duration: 1.5 }}
+          transition={{ delay: 1, duration: 1 }}
           className='about-btn'
           href='#about'
           css={css`
