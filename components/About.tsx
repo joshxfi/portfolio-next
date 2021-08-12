@@ -12,6 +12,7 @@ export const About: React.FC = ({}) => {
       id='about'
       css={css`
         width: 80%;
+        max-width: 1280px;
         margin: 0 auto;
         height: 100vh;
         display: flex;

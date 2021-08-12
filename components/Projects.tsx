@@ -15,6 +15,7 @@ export const Projects: React.FC = () => {
       id='works'
       css={css`
         width: 80%;
+        max-width: 1280px;
         margin: 0 auto;
         min-height: 100vh;
         height: auto;

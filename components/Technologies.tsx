@@ -29,6 +29,7 @@ export const Technologies: React.FC = () => {
       id='skills'
       css={css`
         width: 80%;
+        max-width: 1280px;
         margin: 0 auto;
         min-height: 110vh;
         height: auto;

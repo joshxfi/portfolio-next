@@ -48,6 +48,7 @@ export const Homepage: React.FC = () => {
       css={css`
         height: 100vh;
         width: 80%;
+        max-width: 1280px;
         display: flex;
         align-items: center;
         justify-content: space-between;
