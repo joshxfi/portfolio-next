@@ -4,6 +4,7 @@ import React from "react";
 import { css, jsx } from "@emotion/react";
 import Image from "next/image";
 import colors from "../misc/colors";
+import mq from "../misc/mediaQuery";
 import avatar from "../public/img/bighead1.svg";
 
 export const About: React.FC = ({}) => {
@@ -19,7 +20,7 @@ export const About: React.FC = ({}) => {
         align-items: center;
         justify-content: space-between;
 
-        @media screen and (max-width: 1080px) {
+        ${mq} {
           justify-content: center;
 
           div {

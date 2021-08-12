@@ -3,6 +3,7 @@
 import React from "react";
 import { css, jsx } from "@emotion/react";
 import colors from "../misc/colors";
+import mq from "../misc/mediaQuery";
 import { SiReact } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
@@ -46,7 +47,7 @@ export const Technologies: React.FC = () => {
           color: ${colors.fg1};
         }
 
-        @media screen and (max-width: 1080px) {
+        ${mq} {
           div {
             width: 100%;
           }

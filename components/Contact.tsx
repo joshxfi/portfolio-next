@@ -2,6 +2,7 @@
 /** @jsxRuntime classic */
 import React from "react";
 import { css, jsx } from "@emotion/react";
+import mq from "../misc/mediaQuery";
 import Image from "next/image";
 import hand from "../public/img/hand.png";
 
@@ -20,7 +21,6 @@ export const Contact: React.FC = () => {
         justify-content: center;
         font-size: 1.5rem;
         overflow: hidden;
-        /* position: relative; */
 
         h1 {
           font-size: 5rem;
@@ -37,7 +37,7 @@ export const Contact: React.FC = () => {
           }
         }
 
-        @media screen and (max-width: 1080px) {
+        ${mq} {
           overflow: visible;
 
           h1 {

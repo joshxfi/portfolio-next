@@ -4,6 +4,7 @@ import React from "react";
 import { css, jsx } from "@emotion/react";
 import { Project } from "./Project";
 import colors from "../misc/colors";
+import mq from "../misc/mediaQuery";
 import pskl from "../public/img/pskl2.jpg";
 import cssmaid from "../public/img/cssmaid.jpg";
 import covidtracker from "../public/img/covidtracker.jpg";
@@ -33,7 +34,7 @@ export const Projects: React.FC = () => {
           color: ${colors.fg2};
         }
 
-        @media screen and (max-width: 1080px) {
+        ${mq} {
           div {
             grid-template-columns: 1fr;
           }

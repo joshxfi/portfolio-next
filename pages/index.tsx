@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { css, jsx, Global } from "@emotion/react";
 import colors from "../misc/colors";
+import mq from "../misc/mediaQuery";
 import { Navbar } from "../components/Navbar";
 import { About } from "../components/About";
 import { Contact } from "../components/Contact";
@@ -20,7 +21,7 @@ const App: React.FC = () => {
         position: relative;
         overflow: hidden;
 
-        @media screen and (max-width: 1080px) {
+        ${mq} {
           nav {
             .navigation > a {
               display: none;

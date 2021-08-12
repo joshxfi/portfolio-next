@@ -3,6 +3,7 @@
 import React from "react";
 import { css, jsx } from "@emotion/react";
 import colors from "../misc/colors";
+import mq from "../misc/mediaQuery";
 import { SiGithub } from "react-icons/si";
 import { SiDiscord } from "react-icons/si";
 import { SiInstagram } from "react-icons/si";
@@ -31,7 +32,7 @@ export const Footer: React.FC = () => {
             padding-left: 10rem;
           }
 
-          @media screen and (max-width: 1080px) {
+          ${mq} {
             justify-content: center;
             flex-direction: column;
 
