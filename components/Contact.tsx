@@ -20,7 +20,7 @@ export const Contact: React.FC = () => {
         justify-content: center;
         font-size: 1.5rem;
         overflow: hidden;
-        position: relative;
+        /* position: relative; */
 
         h1 {
           font-size: 5rem;
@@ -67,7 +67,7 @@ export const Contact: React.FC = () => {
           display: flex;
           flex-direction: column;
           position: absolute;
-          top: 35rem;
+          bottom: -10rem;
           z-index: 11;
 
           img {

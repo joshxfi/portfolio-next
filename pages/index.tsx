@@ -18,6 +18,7 @@ const App: React.FC = () => {
     <div
       css={css`
         position: relative;
+        overflow: hidden;
 
         @media screen and (max-width: 1080px) {
           nav {
