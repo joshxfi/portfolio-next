@@ -133,14 +133,28 @@ export const Technologies: React.FC = () => {
               }
 
               .img {
-                /* display: none; */
                 width: 150px;
                 margin: 2rem auto;
+                display: none;
+              }
+
+              .icons > div {
+                p {
+                  transform: translateY(0);
+                }
+
+                svg {
+                  transform: translateY(-1rem);
+                }
+
+                &:hover svg {
+                  transform: translateY(0.1rem);
+                }
               }
             }
           `}
         >
-          <div className='icons' data-aos='fade-right'>
+          <div className='icons' data-aos='fade-up'>
             {frontendIcons.map((Icon, i) => (
               <div key={Icon.toString()}>
                 <p>{frontendNames[i]}</p>
@@ -153,7 +167,7 @@ export const Technologies: React.FC = () => {
             <Image className='img' src={codeblock} data-aos='zoom-in' />
           </div>
 
-          <div className='icons' data-aos='fade-left'>
+          <div className='icons' data-aos='fade-up'>
             {backendIcons.map((Icon, i) => (
               <div key={Icon.toString()}>
                 <p>{backendNames[i]}</p>
