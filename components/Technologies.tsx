@@ -4,6 +4,8 @@ import React from "react";
 import { css, jsx } from "@emotion/react";
 import colors from "../misc/colors";
 import mq from "../misc/mediaQuery";
+import Image from "next/image";
+import donut from "../public/img/donut.png";
 import { SiReact } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
@@ -14,17 +16,12 @@ import { SiGit } from "react-icons/si";
 import { SiSass } from "react-icons/si";
 
 export const Technologies: React.FC = () => {
-  const techIcons = [SiReact, SiNextDotJs, SiTailwindcss, SiNodeDotJs, SiMongodb, SiGit, SiTypescript, SiSass];
-  const techNames: string[] = [
-    "React.js",
-    "Next.js",
-    "Tailwind CSS",
-    "Node.js",
-    "MongoDB",
-    "Git",
-    "TypeScript",
-    "Sass",
-  ];
+  const frontendIcons = [SiReact, SiNextDotJs, SiTailwindcss, SiSass];
+  const frontendNames: string[] = ["React.js", "Next.js", "Tailwind CSS", "Sass"];
+
+  const backendIcons = [SiNodeDotJs, SiMongodb, SiGit, SiTypescript];
+  const backendNames: string[] = ["Node.js", "MongoDB", "Git", "TypeScript"];
+
   return (
     <section
       id='skills'
@@ -72,40 +69,56 @@ export const Technologies: React.FC = () => {
       `}
     >
       <div
-        data-aos='fade-right'
         css={css`
           text-align: left;
           line-height: 2.5rem;
           font-weight: 500;
+          width: 100%;
         `}
       >
-        <h1>my techs.</h1>
+        <h1 data-aos='fade-right'>my techs.</h1>
         <div
           css={css`
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 3rem;
 
             & > div {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 3rem;
+            }
+
+            img {
+              width: 300px;
+              object-fit: contain;
+              transition: 0.3s;
+            }
+
+            & > .icons > div {
               font-size: 3rem;
-              color: ${colors.fg2};
+              color: ${colors.fg};
               display: flex;
               flex-direction: column;
               align-items: center;
-              border-bottom: 2px solid ${colors.fg};
+              background: rgba(255, 255, 255, 0.15);
+              backdrop-filter: blur(0px);
+              -webkit-backdrop-filter: blur(0px);
+              border-radius: 10px;
               padding: 1rem 0;
               transition: 0.3s;
 
               &:hover svg {
-                transform: translateY(-1rem);
+                transform: translateY(0.05rem);
               }
 
               &:hover p {
-                opacity: 0;
+                opacity: 1;
               }
 
               svg {
                 transition: 0.3s;
+                transform: translateY(-1rem);
               }
 
               p {
@@ -114,16 +127,31 @@ export const Technologies: React.FC = () => {
                 margin: 0;
                 font-size: 1.2rem;
                 transition: 0.3s;
+                opacity: 0;
+                transform: translateY(-0.5rem);
               }
             }
           `}
         >
-          {techIcons.map((Icon, i) => (
-            <div key={Icon.toString()}>
-              <p>{techNames[i]}</p>
-              <Icon />
-            </div>
-          ))}
+          <div className='icons' data-aos='fade-right'>
+            {frontendIcons.map((Icon, i) => (
+              <div key={Icon.toString()}>
+                <p>{frontendNames[i]}</p>
+                <Icon />
+              </div>
+            ))}
+          </div>
+
+          <Image src={donut} data-aos='zoom-in' />
+
+          <div className='icons' data-aos='fade-left'>
+            {backendIcons.map((Icon, i) => (
+              <div key={Icon.toString()}>
+                <p>{backendNames[i]}</p>
+                <Icon />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
