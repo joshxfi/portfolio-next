@@ -5,9 +5,9 @@ import { css, jsx } from "@emotion/react";
 import Image from "next/image";
 import colors from "../misc/colors";
 import mq from "../misc/mediaQuery";
-import avatar from "../public/img/bighead1.svg";
+import avatar from "../public/img/profile.png";
 
-export const About: React.FC = ({}) => {
+export const About: React.FC = () => {
   return (
     <section
       id='about'
@@ -70,7 +70,9 @@ export const About: React.FC = ({}) => {
         data-aos='fade-left'
         css={css`
           width: 25rem;
-          padding-bottom: 3rem;
+          padding-top: 4rem;
+          transition: 0.3s;
+          object-fit: contain;
         `}
       >
         <Image src={avatar} alt='avatar' />

@@ -5,7 +5,7 @@ import { css, jsx } from "@emotion/react";
 import colors from "../misc/colors";
 import mq from "../misc/mediaQuery";
 import Image from "next/image";
-import donut from "../public/img/donut.png";
+import codeblock from "../public/img/codeblock.png";
 import { SiReact } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
@@ -81,14 +81,9 @@ export const Technologies: React.FC = () => {
             }
 
             .img {
-              transition: 0.3s;
               width: 300px;
               margin: 0 auto;
               object-fit: contain;
-
-              &:hover {
-                transform: scale(0.98);
-              }
             }
 
             & > .icons > div {
@@ -106,7 +101,7 @@ export const Technologies: React.FC = () => {
               min-width: 5rem;
 
               &:hover svg {
-                transform: translateY(0.05rem);
+                transform: translateY(1.5rem);
               }
 
               &:hover p {
@@ -115,7 +110,6 @@ export const Technologies: React.FC = () => {
 
               svg {
                 transition: 0.3s;
-                transform: translateY(-1rem);
               }
 
               p {
@@ -125,7 +119,7 @@ export const Technologies: React.FC = () => {
                 font-size: 1.2rem;
                 transition: 0.3s;
                 opacity: 0;
-                transform: translateY(-0.5rem);
+                transform: translateY(1rem);
               }
             }
 
@@ -156,7 +150,7 @@ export const Technologies: React.FC = () => {
           </div>
 
           <div className='img'>
-            <Image className='img' src={donut} data-aos='zoom-in' />
+            <Image className='img' src={codeblock} data-aos='zoom-in' />
           </div>
 
           <div className='icons' data-aos='fade-left'>
