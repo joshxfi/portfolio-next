@@ -44,7 +44,7 @@ export const Menu: React.FC<MenuProps> = ({ showMenu, setShowMenu, navLink }) =>
         `}
       >
         <li>{navLink("about", "")}</li>
-        <li>{navLink("techs", "")}</li>
+        <li>{navLink("skills", "")}</li>
         <li>{navLink("works", "")}</li>
         <li>{navLink("contact", "last")}</li>
         <li>

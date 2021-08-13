@@ -17,7 +17,7 @@ import { SiSass } from "react-icons/si";
 
 export const Technologies: React.FC = () => {
   const frontendIcons = [SiReact, SiNextDotJs, SiTailwindcss, SiSass];
-  const frontendNames: string[] = ["React.js", "Next.js", "Tailwind CSS", "Sass"];
+  const frontendNames: string[] = ["React.js", "Next.js", "TailwindCSS", "Sass"];
 
   const backendIcons = [SiNodeDotJs, SiMongodb, SiGit, SiTypescript];
   const backendNames: string[] = ["Node.js", "MongoDB", "Git", "TypeScript"];
@@ -45,25 +45,16 @@ export const Technologies: React.FC = () => {
         }
 
         ${mq} {
-          div {
-            width: 100%;
-          }
-
           div > h1 {
             font-size: 3rem;
           }
 
-          div > p {
-            font-size: 1.3rem;
+          div > .icons > div > p {
+            font-size: 1rem;
           }
 
-          div > div {
-            grid-template-columns: 1fr 1fr;
-            gap: 0 1rem;
-
-            p {
-              font-size: 1rem;
-            }
+          p {
+            font-size: 1rem;
           }
         }
       `}
@@ -83,16 +74,21 @@ export const Technologies: React.FC = () => {
             grid-template-columns: repeat(3, 1fr);
             gap: 3rem;
 
-            & > div {
+            & > .icons {
               display: grid;
               grid-template-columns: 1fr 1fr;
               gap: 3rem;
             }
 
-            img {
-              width: 300px;
-              object-fit: contain;
+            .img {
               transition: 0.3s;
+              width: 300px;
+              margin: 0 auto;
+              object-fit: contain;
+
+              &:hover {
+                transform: scale(0.98);
+              }
             }
 
             & > .icons > div {
@@ -107,6 +103,7 @@ export const Technologies: React.FC = () => {
               border-radius: 10px;
               padding: 1rem 0;
               transition: 0.3s;
+              min-width: 5rem;
 
               &:hover svg {
                 transform: translateY(0.05rem);
@@ -131,6 +128,22 @@ export const Technologies: React.FC = () => {
                 transform: translateY(-0.5rem);
               }
             }
+
+            ${mq} {
+              grid-template-columns: 1fr;
+              padding-bottom: 10rem;
+              gap: 1rem;
+
+              .icons {
+                gap: 1rem;
+              }
+
+              .img {
+                /* display: none; */
+                width: 150px;
+                margin: 2rem auto;
+              }
+            }
           `}
         >
           <div className='icons' data-aos='fade-right'>
@@ -142,7 +155,9 @@ export const Technologies: React.FC = () => {
             ))}
           </div>
 
-          <Image src={donut} data-aos='zoom-in' />
+          <div className='img'>
+            <Image className='img' src={donut} data-aos='zoom-in' />
+          </div>
 
           <div className='icons' data-aos='fade-left'>
             {backendIcons.map((Icon, i) => (
