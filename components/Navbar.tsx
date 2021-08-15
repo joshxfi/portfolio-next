@@ -7,11 +7,6 @@ import colors from "../misc/colors";
 import { FaBars } from "react-icons/fa";
 import { Menu } from "./Menu";
 
-interface NavbarProps {
-  showMenu: boolean;
-  setShowMenu: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
 export const Navbar: React.FC<NavbarProps> = ({ showMenu, setShowMenu }) => {
   const [showNav, setShowNav] = useState<boolean>(true);
   const [delayNav, setDelayNav] = useState<boolean>(true);

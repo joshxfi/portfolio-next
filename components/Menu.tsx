@@ -5,12 +5,6 @@ import { css, jsx } from "@emotion/react";
 import colors from "../misc/colors";
 import { BsArrowRight } from "react-icons/bs";
 
-interface MenuProps {
-  showMenu: boolean;
-  setShowMenu: React.Dispatch<React.SetStateAction<boolean>>;
-  navLink: (i: string, j: string) => JSX.Element;
-}
-
 export const Menu: React.FC<MenuProps> = ({ showMenu, setShowMenu, navLink }) => {
   return (
     <div

@@ -5,13 +5,6 @@ import { css, jsx } from "@emotion/react";
 import colors from "../misc/colors";
 import Image from "next/image";
 
-interface ProjectProps {
-  img: StaticImageData;
-  title: string;
-  desc: string;
-  url: string;
-}
-
 export const Project: React.FC<ProjectProps> = ({ img, title, desc, url }) => {
   return (
     <div
