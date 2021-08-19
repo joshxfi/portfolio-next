@@ -61,9 +61,10 @@ export const About: React.FC = () => {
       >
         <h1>who am I?</h1>
         <p>
-          Hey there! My name is Josh Daniel Bañares, a React.js developer & enthusiast based in the Philippines.
-          I&apos;m a 17 year-old self-taught full-stack MERN developer (<i>kinda</i>). I&apos;m constantly in
-          discombobulation.
+          Hey there! My name is Josh Daniel Bañares, a React.js developer &
+          enthusiast based in the Philippines. I&apos;m a self-taught full-stack
+          MERN developer (<i>kinda</i>), I specialize in front-end development!
+          I&apos;m constantly in discombobulation.
         </p>
       </div>
       <div

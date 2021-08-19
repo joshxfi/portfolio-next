@@ -164,7 +164,12 @@ export const Technologies: React.FC = () => {
           </div>
 
           <div className='img'>
-            <Image className='img' src={codeblock} data-aos='zoom-in' />
+            <Image
+              className='img'
+              src={codeblock}
+              alt='codeblock'
+              data-aos='zoom-in'
+            />
           </div>
 
           <div className='icons' data-aos='fade-up'>
