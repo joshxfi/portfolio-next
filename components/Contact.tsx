@@ -2,7 +2,7 @@
 /** @jsxRuntime classic */
 import React from "react";
 import { css, jsx } from "@emotion/react";
-import mq from "../misc/mediaQuery";
+import mq from "../styles/mediaQuery";
 import Image from "next/image";
 import hand from "../public/img/hand.png";
 

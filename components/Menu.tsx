@@ -2,7 +2,7 @@
 /** @jsxRuntime classic */
 import React from "react";
 import { css, jsx } from "@emotion/react";
-import colors from "../misc/colors";
+import colors from "../styles/colors";
 import { BsArrowRight } from "react-icons/bs";
 
 export const Menu: React.FC<MenuProps> = ({ showMenu, setShowMenu, navLink }) => {

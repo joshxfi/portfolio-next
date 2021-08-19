@@ -3,8 +3,8 @@
 import React from "react";
 import { css, jsx } from "@emotion/react";
 import Image from "next/image";
-import colors from "../misc/colors";
-import mq from "../misc/mediaQuery";
+import colors from "../styles/colors";
+import mq from "../styles/mediaQuery";
 import avatar from "../public/img/profile.png";
 
 export const About: React.FC = () => {

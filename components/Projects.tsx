@@ -3,8 +3,8 @@
 import React from "react";
 import { css, jsx } from "@emotion/react";
 import { Project } from "./Project";
-import colors from "../misc/colors";
-import mq from "../misc/mediaQuery";
+import colors from "../styles/colors";
+import mq from "../styles/mediaQuery";
 import pskl from "../public/img/pskl2.jpg";
 import cssmaid from "../public/img/cssmaid.jpg";
 import covidtracker from "../public/img/covidtracker.jpg";

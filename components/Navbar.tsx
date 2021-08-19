@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { css, jsx } from "@emotion/react";
-import colors from "../misc/colors";
+import colors from "../styles/colors";
 import { FaBars } from "react-icons/fa";
 import { Menu } from "./Menu";
 

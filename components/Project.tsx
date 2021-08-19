@@ -2,7 +2,7 @@
 /** @jsxRuntime classic */
 import React from "react";
 import { css, jsx } from "@emotion/react";
-import colors from "../misc/colors";
+import colors from "../styles/colors";
 import Image from "next/image";
 
 export const Project: React.FC<ProjectProps> = ({ img, title, desc, url }) => {

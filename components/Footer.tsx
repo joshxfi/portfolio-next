@@ -2,8 +2,8 @@
 /** @jsxRuntime classic */
 import React from "react";
 import { css, jsx } from "@emotion/react";
-import colors from "../misc/colors";
-import mq from "../misc/mediaQuery";
+import colors from "../styles/colors";
+import mq from "../styles/mediaQuery";
 import { SiGithub } from "react-icons/si";
 import { SiDiscord } from "react-icons/si";
 import { SiInstagram } from "react-icons/si";

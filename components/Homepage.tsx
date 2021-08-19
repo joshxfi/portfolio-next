@@ -3,7 +3,7 @@
 import React from "react";
 import { css, jsx } from "@emotion/react";
 import { motion } from "framer-motion";
-import colors from "../misc/colors";
+import colors from "../styles/colors";
 import { TiArrowShuffle } from "react-icons/ti";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";

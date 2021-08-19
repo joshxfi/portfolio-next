@@ -2,8 +2,8 @@
 /** @jsxRuntime classic */
 import React from "react";
 import { css, jsx } from "@emotion/react";
-import colors from "../misc/colors";
-import mq from "../misc/mediaQuery";
+import colors from "../styles/colors";
+import mq from "../styles/mediaQuery";
 import Image from "next/image";
 import codeblock from "../public/img/codeblock.png";
 import { SiReact } from "react-icons/si";
