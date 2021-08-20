@@ -11,6 +11,10 @@ export const HtmlHead: React.FC = () => {
         name='google-site-verification'
         content='Enyu2q9yMt05fTlkT0JcCz3Z9tZA84VVPeBLui9XMyc'
       />
+      <meta
+        name='google-site-verification'
+        content='v4O-sG2j0id5t1L4kPOuuLLA88MCJksWUUz6-H_Ni5E'
+      />
       <meta name='title' content='Josh Daniel Bañares | Portfolio' />
       <meta
         name='description'
