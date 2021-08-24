@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import type { AppProps } from "next/app";
-import { HtmlHead } from "../components/HtmlHead";
+import { Layout } from "../components/Layout";
 import AOS from "aos";
 
 import "aos/dist/aos.css";
@@ -15,10 +15,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <>
-      <HtmlHead />
+    <Layout>
       <Component {...pageProps} />
-    </>
+    </Layout>
   );
 }
 export default MyApp;
