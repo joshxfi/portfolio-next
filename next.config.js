@@ -14,7 +14,7 @@ module.exports = {
       
       {
         source: '/linkedin',
-        destination: 'https://www.linkedin.com/in/josh-daniel-ba%C3%B1ares/',
+        destination: 'https://www.linkedin.com/in/joshdanielb/',
         permanent: false,
         basePath: false
       },
