@@ -65,11 +65,15 @@ export const Footer: React.FC = () => {
             <SiGithub />
           </a>
 
-          <a href='#'>
+          <a target='_blank' href='https://discord.gg/qWXYA6PZjh'>
             <SiDiscord />
           </a>
 
-          <a target='_blank' href='https://www.instagram.com/josh.xfi/' rel='noreferrer'>
+          <a
+            target='_blank'
+            href='https://www.instagram.com/josh.xfi/'
+            rel='noreferrer'
+          >
             <SiInstagram />
           </a>
 
