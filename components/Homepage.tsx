@@ -15,7 +15,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 export const Homepage: React.FC = () => {
   const icons = [FaLinkedin, FaDiscord, FaGithubSquare, FaInstagramSquare, FaTwitterSquare, FaFacebookSquare];
   const iconLinks = [
-    'https://www.linkedin.com/in/josh-daniel-ba%C3%B1ares/',
+    'https://www.linkedin.com/in/joshdanielb/',
     'https://discord.gg/qWXYA6PZjh',
     'https://github.com/joshxfi',
     'https://www.instagram.com/josh.xfi/',
