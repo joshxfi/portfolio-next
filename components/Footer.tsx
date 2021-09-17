@@ -61,27 +61,31 @@ export const Footer: React.FC = () => {
             }
           `}
         >
-          <a target='_blank' href='https://github.com/joshxfi' rel='noreferrer'>
-            <SiGithub />
-          </a>
-
-          <a target='_blank' href='https://discord.gg/qWXYA6PZjh'>
-            <SiDiscord />
-          </a>
-
-          <a
-            target='_blank'
+          <FooterLinks href='https://github.com/joshxfi' Icon={SiGithub} />
+          <FooterLinks href='https://discord.gg/qWXYA6PZjh' Icon={SiDiscord} />
+          <FooterLinks
             href='https://www.instagram.com/josh.xfi/'
-            rel='noreferrer'
-          >
-            <SiInstagram />
-          </a>
-
-          <a href='mailto:joshxfi.dev@gmail.com' rel='noreferrer'>
-            <SiGmail />
-          </a>
+            Icon={SiInstagram}
+          />
+          <FooterLinks
+            href='mailto:joshxfi.dev@gmail.com'
+            target='_self'
+            Icon={SiGmail}
+          />
         </div>
       </footer>
     </>
   );
+};
+
+const FooterLinks: React.FC<FooterLinksProps> = ({ href, target, Icon }) => {
+  return (
+    <a href={href} target={target} rel='noreferrer'>
+      <Icon />
+    </a>
+  );
+};
+
+FooterLinks.defaultProps = {
+  target: '_blank',
 };

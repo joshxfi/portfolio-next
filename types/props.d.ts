@@ -15,3 +15,9 @@ interface ProjectProps {
   desc: string;
   url: string;
 }
+
+interface FooterLinksProps {
+  href: string;
+  target?: string;
+  Icon: Icon;
+}
