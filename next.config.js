@@ -18,6 +18,13 @@ module.exports = {
         permanent: false,
         basePath: false
       },
+
+      {
+        source: '/discord',
+        destination: 'https://discord.gg/QwfcUbtzHv',
+        permanent: false,
+        basePath: false
+      },
     ]
   },
 };
