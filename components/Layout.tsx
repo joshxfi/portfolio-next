@@ -78,7 +78,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
           name='description'
           content='A React.js developer based in the Philippines. A dedicated individual in learning full-stack web technologies. Autodidactic but constantly discombobulated.'
         />
-        <meta name='robots' content='index, follow' />
+        <meta name='robots' content='noindex, nofollow' />
         <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
         <meta name='language' content='English' />
         <meta name='author' content='Josh Daniel Bañares' />
